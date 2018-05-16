@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/nice', function () {
+Route::get('/fuck', function () {
     return mt_rand(0.000000, 99.000000);
 });
