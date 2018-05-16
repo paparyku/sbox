@@ -79,7 +79,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{ auth()->user()->avatar }}" alt="">
+                    @auth
+                        <img src="{{ auth()->user()->avatar }}" alt="">
+                    @else
+                        <a href="{{ route('login') }}"></a>
+                    @endauth
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
