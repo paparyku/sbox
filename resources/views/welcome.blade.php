@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Sbox
+                    <img src="{{ auth()->user()->avatar }}" alt="">
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
