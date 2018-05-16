@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Wow
+                    Sbox
                 </div>
 
                 <div class="links">
