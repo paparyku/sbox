@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('login/discord', 'DiscordController@redirectToProvider')->name('login');
 Route::get('login/discord/callback', 'DiscordController@handleProviderCallback');
