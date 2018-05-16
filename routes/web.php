@@ -15,6 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/fuck', function () {
-    return mt_rand(0.000000, 99.000000);
-});
+Route::get('login/discord', 'DiscordController@redirectToProvider');
+Route::get('login/discord/callback', 'DiscordController@handleProviderCallback');

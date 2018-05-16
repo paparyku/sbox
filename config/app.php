@@ -150,7 +150,8 @@ return [
         /*
          * Package Service Providers...
          */
-        Jenssegers\Mongodb\MongodbServiceProvider::class, 
+        Jenssegers\Mongodb\MongodbServiceProvider::class, // Mongodb
+        \SocialiteProviders\Manager\ServiceProvider::class, // Discord Login
         /*
          * Application Service Providers...
          */
