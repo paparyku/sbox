@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('login/discord', 'DiscordController@redirectToProvider')->name('login');
 Route::get('login/discord/callback', 'DiscordController@handleProviderCallback');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
