@@ -1,4 +1,4 @@
-<nav class="navbar is-light">
+<nav class="navbar is-light has-shadow" style="margin-bottom: 10px;">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
@@ -44,7 +44,7 @@
                                     {{ auth()->user()->name }}
                                 </a>
                                 <div class="navbar-dropdown is-boxed">
-                                    <a class="navbar-item" href="#">
+                                    <a class="navbar-item" href="{{ route('profile', auth()->user()->id) }}">
                                         <span class="icon">
                                             <i class="fa fa-user"></i>
                                         </span>
