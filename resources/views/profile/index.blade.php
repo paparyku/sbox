@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title') 
-    {{ str_plural($user->name) }} 
+    {{ str_plural($user->name) }} profile
 @stop 
 
 @section('content')
